@@ -27,7 +27,7 @@ export default class Main extends Component {
   };
 
   static navigationOptions = {
-    title: 'Github Users!',
+    title: 'Github Users',
   };
 
   state = {
