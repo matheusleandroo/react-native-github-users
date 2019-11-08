@@ -59,6 +59,18 @@ export default class Main extends Component {
     this.setState({ loading: true });
 
     try {
+      const existUser = users.filter(r => {
+        return r.login === newUser;
+      });
+
+      if (existUser.length > 0) {
+        this.setState({
+          loading: false,
+          requestError: false,
+        });
+        throw new Error('Duplicate user.');
+      }
+
       const response = await api.get(`/users/${newUser}`);
 
       const data = {
