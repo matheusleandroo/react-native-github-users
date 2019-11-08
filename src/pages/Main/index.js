@@ -8,5 +8,5 @@ export default function Main() {
 }
 
 Main.navigationOptions = {
-  title: 'Olá Mundo!',
+  title: 'Hello World!',
 };
