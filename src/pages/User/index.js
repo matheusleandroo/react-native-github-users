@@ -10,6 +10,7 @@ import {
   Name,
   Bio,
   Stars,
+  StarButton,
   Starred,
   OwnerAvatar,
   Info,
@@ -79,6 +80,12 @@ export default class User extends Component {
     });
   };
 
+  handleNavigate = repository => {
+    const { navigation } = this.props;
+
+    navigation.navigate('WebRepository', { repository });
+  };
+
   render() {
     const { navigation } = this.props;
     const { stars, loading, refreshing } = this.state;
@@ -105,13 +112,15 @@ export default class User extends Component {
               data={stars}
               keyExtractor={star => String(star.id)}
               renderItem={({ item }) => (
-                <Starred>
-                  <OwnerAvatar source={{ uri: item.owner.avatar_url }} />
-                  <Info>
-                    <Title>{item.name}</Title>
-                    <Author>{item.owner.login}</Author>
-                  </Info>
-                </Starred>
+                <StarButton onPress={() => this.handleNavigate(item)}>
+                  <Starred>
+                    <OwnerAvatar source={{ uri: item.owner.avatar_url }} />
+                    <Info>
+                      <Title>{item.name}</Title>
+                      <Author>{item.owner.login}</Author>
+                    </Info>
+                  </Starred>
+                </StarButton>
               )}
             />
           </>
