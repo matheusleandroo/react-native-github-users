@@ -90,7 +90,7 @@ Now you can use "**React Native: GitHub Users**".
 ## Authors
 
 <ul>
-  <li>Matheus Leandro</li>
+  <li><a href="http://matheusleandro.com">Matheus Leandro</a></li>
 </ul>
 
 ## License
