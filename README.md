@@ -70,7 +70,7 @@ After clone repository, go to folder and follow this steps:
 - Run **`yarn`** to install dependencies;
 - Open the simulator and run **`react-native run-android`** or **`react-native run-ios`** to start de aplication.
 
-If the application do not start, run **`react-naative start`**.
+If the application do not start, run **`react-native start`**.
 
 Now you can use "**React Native: GitHub Users**".
 
