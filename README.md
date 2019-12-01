@@ -1,6 +1,4 @@
-<h1 align="center">
-  <img alt="GitHub" title="GitHub" src="https://avatars1.githubusercontent.com/u/9919?s=200&v=4" width="200px" />
-</h1>
+# React Native GitHub Users
 
 <h3 align="center">
   A simple project to show user details on GitHub using React Native.
@@ -38,8 +36,9 @@ If you are using Windows:
 
 <ul>
   <li><a href="https://chocolatey.org/install">Chocolatey</a></li>
+  <li><a href="https://facebook.github.io/react-native/docs/getting-started">React Native CLI</a></li>
   <li><a href="https://www.androidcentral.com/installing-android-sdk-windows-mac-and-linux-tutorial">Android SDK</a></li>
-  <li><a href="https://developer.android.com/studio/install?hl=en">Android Studio</a> or <a href="https://docs.genymotion.com/desktop/3.0/01_Get_started/">Genymotion</a></li>
+  <li><a href="https://developer.android.com/studio/install?hl=en">Android Studio</a> or <a href="https://docs.genymotion.com/desktop/3.0/01_Get_started/">Genymotion</a></li>  
 </ul>
 
 If you are using macOS:
@@ -51,6 +50,7 @@ If you are using macOS:
   <li><a href="https://docs.oracle.com/en/java/javase/13/install/overview-jdk-installation.html#GUID-8677A77F-231A-40F7-98B9-1FD0B48C346A">JDK</a></li>
   <li><a href="https://www.androidcentral.com/installing-android-sdk-windows-mac-and-linux-tutorial">Android SDK</a></li>
   <li><a href="https://developer.android.com/studio/install?hl=en">Android Studio</a> or <a href="https://docs.genymotion.com/desktop/3.0/01_Get_started/">Genymotion</a></li>
+  <li><a href="https://cocoapods.org/">CocoaPods</a></li>
 </ul>
 
 If you are using Linux distributions:
@@ -67,8 +67,16 @@ If you are using Linux distributions:
 
 After clone repository, go to folder and follow this steps:
 
+<h4>macOS</>
+
 - Run **`yarn`** to install dependencies;
-- Open the simulator and run **`react-native run-android`** or **`react-native run-ios`** to start de aplication.
+- Run **`cd ios`** and **`pod install`**;
+- Run **`react-native run-ios`** to start de aplication.
+
+<h4>Windows or Linux distributions</>
+
+- Run **`yarn`** to install dependencies;
+- Open the simulator and run **`react-native run-android`** to start de aplication.
 
 If the application do not start, run **`react-native start`**.
 
