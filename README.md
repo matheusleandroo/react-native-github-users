@@ -71,7 +71,7 @@ After clone repository, go to folder and follow this steps:
 
 - Run **`yarn`** to install dependencies;
 - Run **`cd ios`** and **`pod install`**;
-- Run **`react-native run-ios`** to start de aplication.
+- Run **`cd ..`** and **`react-native run-ios`** to start de aplication.
 
 <h4>Windows or Linux distributions</>
 
