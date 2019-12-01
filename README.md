@@ -67,7 +67,7 @@ If you are using Linux distributions:
 
 After clone repository, go to folder and follow this steps:
 
-<h4>macOS</>
+<h4>macOS</h4>
 
 - Run **`yarn`** to install dependencies;
 - Run **`cd ios`** and **`pod install`**;
@@ -80,7 +80,7 @@ Possible errors:
 - No bundle URL present: run **`rm -rf ios/build/; kill $(lsof -t -i:8081); react-native run-ios`**
 - spawnSync ./gradlew EACCES: run **`chmod 755 android/gradlew`**
 
-<h4>Windows or Linux distributions</>
+<h4>Windows or Linux distributions</h4>
 
 - Run **`yarn`** to install dependencies;
 - Open the simulator and run **`react-native run-android`** to start de aplication.
