@@ -26,10 +26,6 @@ export default class Main extends Component {
     }).isRequired,
   };
 
-  static navigationOptions = {
-    title: 'Github Users',
-  };
-
   state = {
     newUser: '',
     users: [],
@@ -100,6 +96,10 @@ export default class Main extends Component {
     const { navigation } = this.props;
 
     navigation.navigate('User', { user });
+  };
+
+  static navigationOptions = {
+    title: 'Github Users',
   };
 
   render() {
